@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Butter Budget</title>
+    <meta name="description" content="A simple budgeting app to get you jumpstarted in budgeting better.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+<body>
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <nav>
+        <div class="logo">
+            <img src="./images/logo.png">
+            <h1>Butter Budget</h1>
+        </div>
+        <a href="#home-page">Home</a>
+        <a href="#search-page">Expenses</a>
+        <a href="#about-page">Report</a>
+    </nav>
+
+    <div class="page" id="home-page">
+        <form>
+            <label for="expenseName">Name</label>
+            <input type="text" id="expenseName" placeholder="Chipotle">
+            
+            <label for="expenseAmount">Amount</label>
+            <input type="number" id="expenseAmount" placeholder="100.00" min="0">
+
+            <label for="expenseType">Type</label>
+            <select id="expenseType">
+                <option value="budgetItemCar">Car</option>
+                <option value="budgetItemHouse">House</option>
+                <option value="budgetItemApartment">Apartment</option>
+                <option value="budgetItemPersonal">Personal</option>
+                <option value="budgetItemClothes">Clothes</option>
+                <option value="budgetItemFood">Food</option>
+                <option value="budgetItemSports">Sports</option>
+            </select>
+
+            <button id="enterExpense">Add</button>
+        </form>
+
+    </div>
+
+    <!-- Main Script -->
+</body>
+</html>
