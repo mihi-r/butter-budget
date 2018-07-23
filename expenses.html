@@ -23,11 +23,12 @@
             <h1>Butter Budget</h1>
         </div>
         <a href="#home-page">Home</a>
-        <a href="#search-page">Expenses</a>
-        <a href="#about-page">Report</a>
+        <a href="#expenses-page">Expenses</a>
+        <a href="#report-page">Report</a>
     </nav>
 
-    <div class="page" id="home-page">
+    <div class="page" id="expenses-page">
+        <h2>Add your expense</h2>
         <form>
             <label for="expenseName">Name</label>
             <input type="text" id="expenseName" placeholder="Chipotle">
@@ -48,6 +49,50 @@
 
             <button id="enterExpense">Add</button>
         </form>
+
+        <h2>Your progress</h2>
+        <div class="progressBars">
+            <div class="progressBar">
+                <div class="bar" id="totalBudget"></div>
+            </div>
+            <p>Total Budget</p>
+
+            <div class="progressBar">
+                <div class="bar" id="car"></div>
+            </div>
+            <p>Car</p>
+
+            <div class="progressBar">
+                <div class="bar" id="house"></div>
+            </div>
+            <p>House</p>
+
+            <div class="progressBar">
+                <div class="bar" id="apartment"></div>
+            </div>
+            <p>Apartment</p>
+
+            <div class="progressBar">
+                <div class="bar" id="personal"></div>
+            </div>
+            <p>Personal</p>
+
+            <div class="progressBar">
+                <div class="bar" id="clothes"></div>
+            </div>
+            <p>Clothes</p>
+
+            <div class="progressBar">
+                <div class="bar" id="food"></div>
+            </div>
+            <p>Food</p>
+
+            <div class="progressBar">
+                <div class="bar" id="sports"></div>
+            </div>
+            <p>Sports</p>
+
+        </div>
 
     </div>
 

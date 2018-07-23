@@ -48,11 +48,16 @@ nav .logo img {
 
 .page {
     z-index: 1;
-    padding: 150px 20px 100px 20px;
+    padding: 120px 20px 100px 20px;
+}
+
+.page h2 {
+    margin: 0 40px 20px 40px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 form {
-    margin: 0 40px;
+    margin: 0 40px 30px 40px;
     border-radius: 5px;
     background-color: #f9f8f1;
     padding: 20px;
@@ -88,6 +93,68 @@ form #enterExpense:hover {
     cursor: pointer;
 }
 
+.progressBars {
+    margin: 10px 40px;
+}
+
+.progressBars .progressBar {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(245, 247, 250);
+}
+
+
+.progressBars .bar {
+    height: 30px;
+    border-radius: 10px 10px 10px 10px;
+    transition: 1s;
+}
+
+.progressBars p {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 4px;
+}
+
+.progressBars #totalBudget {
+    width: 100%;
+    height: 50px;
+    background-color: #66bb6a;
+}
+
+.progressBars #car {
+    width: 1%;
+    background-color: rgb(250, 68, 68);
+}
+
+.progressBars #house {
+    width: 1%;
+    background-color: rgb(68, 250, 144);
+}
+
+.progressBars #apartment {
+    width: 1%;
+    background-color: rgb(107, 68, 250);
+}
+
+.progressBars #personal {
+    width: 1%;
+    background-color: rgb(250, 156, 68);
+}
+
+.progressBars #clothes {
+    width: 1%;
+    background-color: rgb(250, 68, 123);
+}
+
+.progressBars #food {
+    width: 1%;
+    background-color: rgb(68, 198, 250);
+}
+
+.progressBars #sports {
+    width: 1%;
+    background-color: rgb(250, 232, 68);
+}
 #form {
     display: none;
 }
