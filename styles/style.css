@@ -155,3 +155,96 @@ form #enterExpense:hover {
     width: 1%;
     background-color: rgb(250, 232, 68);
 }
+#form {
+    display: none;
+}
+
+#second {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#switchProfBtn {
+    display: none;
+}
+
+#first {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#first #main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 2;
+    overflow: hidden;
+}
+
+#first #main form {
+    display: none;
+}
+
+#first #main div input {
+    height: 30px;
+    width: 200px;
+    margin: 5px 0px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+}
+
+#first #sideBar {
+    border-left: solid black 2px;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+#first button {
+    display: block;
+    height: 100px;
+    width: 100px;
+    color: white;
+    font-size: 70px;
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+    border-radius: 3px;
+    transition: .2s;
+    border-style: solid;
+}
+
+#first button:hover {
+    color: #66bb6a;
+    background-color: white;
+}
+
+#first div div button {
+    margin: 10px 1px 0px 1px;
+    height: 25px;
+    width: 63px;
+    font-size: 12px;
+    display: inline;
+}
+
+#first #cancelBtn, #first #clearBtn {
+    background-color: red;
+    border-color: red;
+}
+
+#first #cancelBtn:hover, #first #clearBtn:hover {
+    color: red;
+    background-color: white;
+}
+
+#first #logo {
+    padding-bottom: 20px;
+}
+
