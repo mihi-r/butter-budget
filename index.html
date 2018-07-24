@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./styles/style.css">
 
+
   <title>Butter Budget</title>
 </head>
-<body>
+<body id="index">
 
   <nav>
         <div class="logo">
             <img src="./images/logo.png">
             <h1>Butter Budget</h1>
         </div>
-        <a href="#home-page">Home</a>
-        <a href="#search-page">Expenses</a>
-        <a href="#about-page">Report</a>
+        <a href="./index.html">Home</a>
+        <a href="./expenses.html">Expenses</a>
+        <a href="./report.html">Report</a>
   </nav>
 
   <div id="first">
@@ -42,13 +43,21 @@
   </div>
 
   <div class="page" id="home-page">
-    <div id="second">
     <h1></h1>
     <p></p>
-    <button id="switchProfBtn">Switch Profile</button>
-    <button id="editProfBtn">Edit Profile</button>
-    <button id="addProfBtn">Add Profile</button>
-    <button id="deleteBtn">Delete Profile</button>
+    <div id="editSection">
+      <input type="text" name="userName" placeholder="Name" autofocus><br>
+      <input type="number" name="userBudget" placeholder="Total Budget" min="0" step="50"><br>
+      <div>
+        <button id="cancelProfBtn">Cancel</button>
+        <button id="updateBtn">Update</button>
+      </div>
+    </div>
+    <div id="profBtns">
+      <button id="switchProfBtn">Switch Profile</button>
+      <button id="editProfBtn">Edit Profile</button>
+      <button id="addProfBtn">Add Profile</button>
+      <button id="deleteBtn">Delete Profile</button>
     </div>
   </div>  
 
