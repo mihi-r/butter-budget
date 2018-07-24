@@ -2,7 +2,7 @@ var firstName = localStorage.getItem('firstName');
 var totalBudget = localStorage.getItem('totalBudget');
 var budgetItemCar = localStorage.getItem('budgetItemCar');
 var budgetItemHouse = localStorage.getItem('budgetItemHouse');
-var budgetItemapartment = localStorage.getItem('budgetItemapartment');
+var budgetItemApartment = localStorage.getItem('budgetItemApartment');
 var budgetItemPersonal = localStorage.getItem('budgetItemPersonal');
 var budgetItemClothes = localStorage.getItem('budgetItemClothes');
 var budgetItemFood = localStorage.getItem('budgetItemFood');
@@ -11,7 +11,7 @@ var bt = [];
 var amt = [];
 var initStr ="firstName(" + firstName + ")." + "totalBudget(totBudget," + totalBudget + ")."
 +"budgetItem(budgetItemCar, " + budgetItemCar + ")." + "budgetItem(budgetItemHouse, " + budgetItemHouse + ")."
-+ "budgetItem(budgetItemapartment, " + budgetItemapartment + ")." + "budgetItem(budgetItemPersonal, " + budgetItemPersonal + ")."
++ "budgetItem(budgetItemApartment, " + budgetItemApartment + ")." + "budgetItem(budgetItemPersonal, " + budgetItemPersonal + ")."
 + "budgetItem(budgetItemClothes, " + budgetItemClothes + ")." + "budgetItem(budgetItemFood, " + budgetItemFood + ")."
 + "budgetItem(budgetItemSports, " + budgetItemSports + ").";
 
@@ -67,8 +67,8 @@ function hundredDollarClub(){
               htmlSrc.value = "./reportImgs/house.jpg"
               newImg.setAttributeNode(htmlSrc);
             break;
-          case "budgetItemapartment":
-              htmlSrc.value = "./reportImgs/apartment.jpg"
+          case "budgetItemApartment":
+              htmlSrc.value = "./reportImgs/Apartment.jpg"
               newImg.setAttributeNode(htmlSrc);
             break;
 
@@ -154,7 +154,7 @@ function totalSpent(){
         newP.innerHTML = "Total Spent on House: $" + String(amt[i]);
       }
       else if(i == 3 && amt[i] != "0"){
-        newP.innerHTML = "Total Spent on apartment: $" + String(amt[i]);
+        newP.innerHTML = "Total Spent on Apartment: $" + String(amt[i]);
       }
       else if(i == 4 && amt[i] != "0"){
         newP.innerHTML = "Total Spent on Personal: $" + String(amt[i]);
