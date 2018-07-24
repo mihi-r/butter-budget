@@ -1,0 +1,48 @@
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fffff0;
+}
+
+#headingP {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#barChart {
+  margin-left: 600px;
+  height: 100%
+  width: 750px;
+  font-size: 18px;
+}
+
+#totalExpenses {
+position: absolute;
+  width: 250px;
+  font-size: 18px;
+}
+
+#budgetContainer {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+}
+
+#hdcP {
+  margin-top: 350px;
+
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  display: block;
+}
+
+#greenText{
+  font-size: 18px;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+}
