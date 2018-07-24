@@ -16,9 +16,9 @@ localStorage.removeItem('totalBudget');*/
 
 if (localStorage.getItem('firstName')) {
 	document.getElementById('first').style.display = 'none';
-	document.getElementById('second').style.display = 'flex';
-	document.querySelector('#second h1').textContent = 'Welcome back, ' + localStorage.getItem('firstName');
-	document.querySelector('#second p').textContent = 'Your Total Budget: ' + localStorage.getItem('totalBudget');
+	document.getElementById('home-page').style.display = 'flex';
+	document.querySelector('#home-page h1').textContent = 'Welcome back, ' + localStorage.getItem('firstName');
+	document.querySelector('#home-page p').textContent = 'Your Total Budget: ' + localStorage.getItem('totalBudget');
 } else {
 	document.querySelector('nav').style.display = 'none';
 }
@@ -37,7 +37,7 @@ cancelBtn.addEventListener('click', function(){
 
 clearBtn.addEventListener('click', function(){
 	for (var i = 0; i < inputs.length; i++) {
-		inputs[i].value = '';
+		inputs[i].value = null;
 	}
 })
 
@@ -60,9 +60,9 @@ saveBtn.addEventListener('click', function(){
 	localStorage.setItem('totalBudget', inputs[1].value);
 	clearBtn.click();
 	document.getElementById('first').style.display = 'none';
-	document.getElementById('second').style.display = 'flex';
-	document.querySelector('#second h1').textContent = 'Welcome ' + localStorage.getItem('firstName');
-	document.querySelector('#second p').textContent = 'Your Total Budget: ' + localStorage.getItem('totalBudget');
+	document.getElementById('home-page').style.display = 'flex';
+	document.querySelector('#home-page h1').textContent = 'Welcome ' + localStorage.getItem('firstName');
+	document.querySelector('#home-page p').textContent = 'Your Total Budget: ' + localStorage.getItem('totalBudget');
 	localStorage.setItem('budgetItemCar', 0);
 	localStorage.setItem('budgetItemHouse', 0);
 	localStorage.setItem('budgetItemApartment', 0);
@@ -70,6 +70,10 @@ saveBtn.addEventListener('click', function(){
 	localStorage.setItem('budgetItemClothes', 0);
 	localStorage.setItem('budgetItemFood', 0);
 	localStorage.setItem('budgetItemSports', 0);
+	localStorage.setItem('h1', document.querySelector('#home-page h1').textContent);
+	localStorage.setItem('p', document.querySelector('#home-page p').textContent);
+	change_h1();
+	change_p();
 })
 
 deleteBtn.addEventListener('click', function(){
@@ -95,7 +99,7 @@ deleteBtn.addEventListener('click', function(){
 		localStorage.removeItem('names');
 		localStorage.removeItem('budgets');
 		document.getElementById('first').style.display = 'flex';
-		document.getElementById('second').style.display = 'none';
+		document.getElementById('home-page').style.display = 'none';
 		document.querySelector('nav').style.display = 'none';
 	}
 	localStorage.removeItem('budgetItemCar');
@@ -107,12 +111,27 @@ deleteBtn.addEventListener('click', function(){
 	localStorage.removeItem('budgetItemSports');
 })
 
+editProfBtn.addEventListener('click', function(){
+	document.querySelector('#home-page h1').style.display = 'none';
+	document.querySelector('#home-page p').style.display = 'none';
+	document.querySelector('#home-page #profBtns').style.display = 'none';
+	document.querySelector('#home-page #editSection').style.display = 'flex';
+})
+
 addProfBtn.addEventListener('click', function(){
-	document.getElementById('first').style.display = 'flex';
-	document.getElementById('second').style.display = 'none';
-	formButton.click();
+	/*document.getElementById('first').style.display = 'flex';
+	document.getElementById('home-page').style.display = 'none';
+	formButton.click();*/
 })
 
 switchProfBtn.addEventListener('click', function(){
-
+	/*To be added*/
 })
+
+function change_h1() {
+	var h1 = localStorage.getItem('h1');
+}
+
+function change_p() {
+	var p = localStorage.getItem('p');	
+}
