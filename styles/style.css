@@ -93,6 +93,11 @@ form #enterExpense:hover {
     cursor: pointer;
 }
 
+#index {
+    height: 100vh;
+    overflow: hidden;
+}
+
 .progressBars {
     margin: 10px 40px;
 }
@@ -155,16 +160,17 @@ form #enterExpense:hover {
     width: 1%;
     background-color: rgb(250, 232, 68);
 }
+
 #form {
     display: none;
 }
 
-#second {
+#home-page {
+    padding: 100px 20px 0px 20px;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 #switchProfBtn {
@@ -199,13 +205,16 @@ form #enterExpense:hover {
     border: 1px solid #ccc;
     border-radius: 4px; 
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    outline: none;
 }
 
 #first #sideBar {
-    border-left: solid black 2px;
     height: 100%;
     flex-direction: column;
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    margin-right: 50px;
 }
 
 #first button {
@@ -219,6 +228,7 @@ form #enterExpense:hover {
     border-radius: 3px;
     transition: .2s;
     border-style: solid;
+    outline: none;
 }
 
 #first button:hover {
@@ -232,6 +242,7 @@ form #enterExpense:hover {
     width: 63px;
     font-size: 12px;
     display: inline;
+    outline: none;
 }
 
 #first #cancelBtn, #first #clearBtn {
@@ -248,3 +259,81 @@ form #enterExpense:hover {
     padding-bottom: 20px;
 }
 
+#home-page {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f9f8f1;
+}
+
+#home-page h1 {
+    align-self: flex-start;
+    font-size: 37px;
+}
+
+#home-page p {
+    margin-top: 90px;
+    margin-bottom: 190px;
+    font-size: 33px;
+}
+
+#home-page div button {
+    padding: 10px 30px;
+    margin: 0px 100px 25px 100px;
+    border-radius: 5px;
+    border-style: solid;
+    color: #f9f8f1;
+    font-size: 25px;
+    outline: none;
+}
+
+#editProfBtn {
+    background-color: #ffe066;
+    border-color: #ffe066;
+    transition: .3s;
+}
+
+#editProfBtn:hover {
+    background-color: white;
+    color: #ffe066;
+}
+
+#addProfBtn {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+    transition: .3s;
+}
+
+#addProfBtn:hover {
+    background-color: white;
+    color: #66bb6a;
+}
+
+#deleteBtn {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+    transition: .3s;
+}
+
+#deleteBtn:hover {
+    background-color: white;
+    color: #ff4d4d;
+}
+
+#editSection {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 150px 0 150px 0px;
+}
+
+#editSection input {
+    height: 30px;
+    width: 200px;
+    margin: 2px 0px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    outline: none;
+}
